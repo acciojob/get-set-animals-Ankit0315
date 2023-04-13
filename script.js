@@ -3,7 +3,7 @@ class Animal {
 	constructor(species){
 		this.species = species;
 	}
-	get species(){
+	get getSpecies(){
 	 return this.species;
 	}
 	makeSound(){
@@ -25,6 +25,12 @@ class Cat extends Animal {
 		console.log("purr");
 	}
 }
+let cat = new Cat("cat");
+cat.makeSound();
+cat.purr();
+let dog = new Dog("dog");
+dog.makeSound();
+dog.bark();
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
